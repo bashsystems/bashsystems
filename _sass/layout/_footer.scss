@@ -7,8 +7,17 @@
 /* Footer */
 
 	#footer {
+		.inner {
+			padding-bottom: 0 !important;
+		}
 		.copyright {
+			text-align: center;
+			margin-bottom: 50px;
 			font-size: 0.8em;
+		}
+		.attribution {
+			text-align: right;
+			font-size: 0.4em;
 			list-style: none;
 			padding-left: 0;
 
@@ -26,10 +35,13 @@
 					padding-left: 0;
 				}
 			}
+			a {
+				border: none;
+			}
 		}
 
 		@include breakpoint(xsmall) {
-			.copyright {
+			.attribution {
 				li {
 					display: block;
 					border-left: 0;

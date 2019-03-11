@@ -349,4 +349,14 @@
 
 	});
 
+	$(document).ready(function() {
+		$('.open-contact').click(function(e) {
+			if ($('#launcher').length) {
+				e.preventDefault();
+				$('#launcher').contents().find('.src-component-launcher-WidgetLauncher-wrapper').click();
+				return false;
+			}
+		});
+	});
+
 })(jQuery);
