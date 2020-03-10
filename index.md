@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Organic, home grown, artisinal web hosting'
+landing-title: 'Custom tailored web hosting'
 description: null
 image: null
 author: null
