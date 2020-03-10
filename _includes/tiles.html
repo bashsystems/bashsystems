@@ -19,7 +19,13 @@
       <img src="{{ page.image }}" alt="" />
     </span>
     <header class="major">
-      <h3><!-- <a href="{{ page.url | relative_url  }}" class="link"> -->{{ page.title }}<!-- </a> --></h3>
+      <h3>
+        {% if page.has-page %}
+        <a href="{{ page.url }}" class="link">{{ page.title }}</a>
+        {% else %}
+        {{ page.title }}
+        {% endif %}
+      </h3>
       <p>{{ page.description }}</p>
     </header>
   </article>
